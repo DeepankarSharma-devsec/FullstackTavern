@@ -1,0 +1,78 @@
+<!-- 
+    Notes:
+    1. A table is used to organize data in rows and columns for better readability.
+    2. Rows (tr) go from left to right, while columns (th/td) go from top to bottom.
+    3. The table head (thead) contains headers that describe the data in the table.
+    4. Table data (tbody) contains the actual content of the table.
+    5. Each cell in the table is represented by either a th (header cell) or td (data cell).
+    6. Styling can be applied using CSS to improve the table's appearance:
+        - Use `border-collapse: collapse;` to merge table borders.
+        - Add padding for spacing within cells.
+        - Use `text-align` to align text within cells.
+        - Apply background colors to distinguish headers from data rows.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #fa0000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Students Grade Table
+    </h1>
+
+    <hr>
+
+    <table>
+        <!--Thread-->
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Grade</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>A</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>B</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Sam Brown</td>
+                <td>C</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Lisa White</td>
+                <td>A</td>
+                <td>21</td> 
+        </tbody>
+    </table>
+
+</body>
+</html>

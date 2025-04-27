@@ -1,0 +1,42 @@
+<!-- Notes on Navigation in HTML -->
+<!-- 
+1. Navigation in HTML allows users to move between different pages of a site or sections within a page.
+2. External Navigation:
+    - Used to navigate between different HTML files or pages.
+    - Implemented using anchor (<a>) tags with href pointing to the target HTML file.
+    - Example: <a href="about.html">About Us</a>
+3. Internal Navigation:
+    - Used to navigate within a single HTML file.
+    - Implemented using anchor (<a>) tags with href pointing to an ID of a section within the same page.
+    - Example: <a href="#about">About Us</a>
+    - The target section must have a corresponding ID attribute.
+      Example: <div id="about">...</div>
+4. Best Practices:
+    - Use descriptive names for IDs to improve readability and maintainability.
+    - Ensure navigation links are consistent across all pages for a better user experience.
+-->
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page Content -->
+    <h1>Welcome to Full Stack Tavern</h1>
+    <p>Your go-to destination for Full Stack Web Development with MERN Stack and GenAI. Explore our resources and services using the navigation menu above.</p>
+</body>
+</html>

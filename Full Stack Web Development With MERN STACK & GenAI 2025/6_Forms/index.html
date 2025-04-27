@@ -1,0 +1,161 @@
+<!-- 
+This HTML document demonstrates the use of various form input elements in a web page. 
+It includes examples of different input types such as text, number, password, email, URL, 
+phone, range, date, time, month, week, color, checkbox, radio, file, and textarea. 
+
+Each input field is labeled for accessibility and usability. Additionally, there is a 
+dropdown select element with multiple options. The form concludes with a submit button 
+to send the data. This document serves as a comprehensive guide to HTML form elements 
+and their attributes, showcasing how to collect diverse types of user input effectively.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>
+        Forms In HTML
+    </h1>
+
+    <form>
+        <div>
+                    <!--
+        Text Input
+        -->
+        <label for="Fullname">Enter Fullname : </label>
+        <input id="Fullname" type="text" placeholder="Enter your name">
+        </div>
+
+        <br>
+
+
+        <div>
+                    <!--NUmber Input-->
+        <label for="Age">Enter Age : </label>
+        <input type="number" id="Age" placeholder="Enter your age">
+        </div>
+        
+        <br>
+
+        <div>
+            <!-- Password Input -->
+            <label for="Password">Enter Password : </label>
+            <input type="password" id="Password" placeholder="Enter your password">
+
+        </div>
+
+        <br>
+
+        <div>
+            <!-- Email Input -->
+            <label for="Email">Enter Email : </label>
+            <input type="email" id="Email" placeholder="Enter your email">
+        </div>
+
+        <br>
+
+        <div>
+            <!-- URL input -->
+            <label for="Website">Enter Website : </label>
+            <input type="url" id="Website" placeholder="Enter your website URL">
+        </div>
+
+        <br>
+
+        <div>
+            <!-- Phone number input-->
+            <label for="Phone">Enter Phone Number : </label>
+            <input type="tel" id="Phone" placeholder="Enter your phone number">
+
+        </div>
+
+        <div>
+            <!-- Number Input With Min And Max Value-->
+            <label for="Age">Enter Age : </label>
+            <input type="number" id="Age" placeholder="Enter your age" min="1" max="100">
+        </div>
+
+        <div>
+            <!--Range Input-->
+            <label for="Range">Enter Range : </label>
+            <input type="range" id="Range" placeholder="Enter your range" min="1" max="100"> 
+        </div>
+
+        <div>
+            <!--Date Input-->
+            <label for="Date">Enter Date : </label>
+            <input type="date" id="Date" placeholder="Enter your date">
+        </div>
+
+        <div>
+            <!--Time Input-->
+            <label for="Time">Enter Time : </label>
+            <input type="time" id="Time" placeholder="Enter your time">
+
+        </div>
+
+        <div>
+            <!--Month Input-->
+            <label for="Month">Enter Month : </label>
+            <input type="month" id="Month" placeholder="Enter your month">
+        </div>
+
+        <div>
+            <!--Week Input-->
+            <label for="Week">Enter Week : </label>
+            <input type="week" id="Week" placeholder="Enter your week">
+        </div>
+
+        <div>
+            <!--Color Input-->
+            <label for="Color">Enter Color : </label>
+            <input type="color" id="Color" placeholder="Enter your color">
+        </div>
+
+        <div>
+            <!--Checkbox Input-->
+            <label for="Checkbox">Enter Checkbox : </label>
+            <input type="checkbox" id="Checkbox" placeholder="Enter your checkbox">
+        </div>
+
+        <div>
+            <!--Radio Input-->
+            <label for="Radio">Enter Radio : </label>
+            <input type="radio" id="Radio" placeholder="Enter your radio">
+        </div>
+
+        <div>
+            <!--File Input-->
+            <label for="File">Enter File : </label>
+            <input type="file" id="File" placeholder="Enter your file">
+        </div>
+
+        <div>
+            <!--Text area input-->
+            <label for="TextArea">Enter Text Area : </label>
+            <textarea id="TextArea" placeholder="Enter your text area" rows="10" cols="60"></textarea>
+        </div>
+
+        <div>
+            <!-- Select Dropdown-->
+            <label for="Select">Enter Select : </label>
+            <select id="Select" placeholder="Enter your select">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option   >
+        </div>
+
+        <button type="submit">Submit</button>
+
+
+
+
+    </form>
+
+    
+</body>
+</html>
