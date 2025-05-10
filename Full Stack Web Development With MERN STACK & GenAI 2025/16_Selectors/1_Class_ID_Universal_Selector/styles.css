@@ -1,0 +1,25 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    color: red; /* This will apply red color to all elements */
+}
+
+/* ID Selector */
+#main-title {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Class Selector */
+.text-content {
+    font-family: Arial, sans-serif;
+    color: blue;
+    line-height: 1.6;
+}
+
+/* Highlight Class for Multiple Elements */
+.highlight {
+    background-color: yellow;
+}

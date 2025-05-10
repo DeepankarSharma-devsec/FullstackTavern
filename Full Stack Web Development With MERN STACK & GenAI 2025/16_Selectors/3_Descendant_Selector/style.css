@@ -1,0 +1,15 @@
+/* Descendant Selector: all <p> tags inside .container */
+.container p {
+  color: red;
+}
+
+/* More specific descendant selector: .special inside .container */
+.container .special {
+  background-color: blue;
+  color: white;
+}
+
+/* Direct child selector: only immediate h2 children of .container */
+.container > h2 {
+  color: purple;
+}

@@ -1,0 +1,35 @@
+/* ----------------------------------
+   Element Selector
+   Specificity: 0-0-0-1 (lowest)
+   Will apply unless overridden by more specific rules
+---------------------------------- */
+p {
+  color: blue;
+}
+
+/* ----------------------------------
+   Class Selector
+   Specificity: 0-0-1-0
+   Overrides element selectors for elements with the specified class
+---------------------------------- */
+.text {
+  color: green;
+}
+
+/* ----------------------------------
+   ID Selector
+   Specificity: 0-1-0-0
+   Overrides both class and element selectors
+---------------------------------- */
+#paragraph {
+  color: red;
+}
+
+/* ----------------------------------
+   Inline Style
+   Specificity: 1-0-0-0 (highest)
+   Overrides all external or internal CSS rules
+   Applied directly inside the HTML element using the 'style' attribute
+---------------------------------- */
+/* Note: This rule is not in CSS file but directly inside the HTML:
+   style="color: purple;" — so it will override red from ID, green from class, and blue from element */

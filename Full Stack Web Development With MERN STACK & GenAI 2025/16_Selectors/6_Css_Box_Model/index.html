@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Box Model</title>
+  <style>
+    /* Select the box class */
+    .box {
+      background-color: yellow;
+
+      /* Set fixed width and height */
+      width: 300px;
+      height: 300px;
+
+      /* Border: shorthand syntax (uncomment to use) */
+      /* border: 20px solid red; */
+
+      /* Border: individual sides */
+      border-top: 20px solid red;
+      border-bottom: 20px solid green;
+      border-right: 20px solid purple;
+      border-left: 20px solid black;
+
+      /* Padding: space between content and border */
+      /* padding: 15px; */ /* shorthand */
+
+      /* Individual padding sides */
+      padding-top: 30px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      /* Margin: space outside the box */
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    /* Style the heading to demonstrate margin effect */
+    h1 {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- This is the box element -->
+  <div class="box">
+    <!-- This is the content inside the box -->
+    <p>This is the content inside the box.</p>
+  </div>
+
+  <!-- Extra element to demonstrate margin spacing -->
+  <h1>This is an H1 element below the box</h1>
+
+</body>
+</html>

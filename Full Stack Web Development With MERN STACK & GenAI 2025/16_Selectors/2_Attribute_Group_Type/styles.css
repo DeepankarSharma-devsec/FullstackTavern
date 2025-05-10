@@ -1,0 +1,22 @@
+/* Type Selector */
+h1 {
+    color: purple;
+}
+
+h2 {
+    color: purple;
+}
+
+/* Group Selector */
+h1, h2 {
+    color: purple;
+}
+
+/* Attribute Selector */
+[data-priority="high"] {
+    color: red;
+}
+
+[data-priority="low"] {
+    color: yellow;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Specificity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="core-container">
+    <h1 class="main text">CSS Specificity Example</h1>
+
+    <!-- Element with no class or id -->
+    <p>This is a basic paragraph.</p>
+
+    <!-- Paragraph with class "text" -->
+    <p class="text">This paragraph has the 'text' class.</p>
+
+    <!-- Paragraph with both class and ID -->
+    <p class="text" id="paragraph" style="color: purple;">
+      This paragraph has class 'text', ID 'paragraph', and inline style.
+    </p>
+  </div>
+</body>
+</html>

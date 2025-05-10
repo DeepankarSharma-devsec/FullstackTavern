@@ -1,0 +1,63 @@
+<!-- Notes:
+The next method of using CSS in HTML is to use the internal CSS.
+This is going to be an improvement when using the inline CSS.
+To use the internal we are going to write it in the head tag.
+It must be within the head tag.
+Next step is that we are going to select the element that we want to style.
+For this approach for selecting we are using the tag names.
+We have the CSS being applied.
+For the internal, we have separation of concern.
+It looks cleaner than the inline.
+In future, changes can be made easily in the style tag.
+Cascade is a rule that determines which CSS rule applies when there are conflicts.
+Inline CSS has higher precedence than internal CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Example</title>
+    <!-- Internal CSS -->
+    <style>
+        /* Styling the body element */
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            padding: 20px; /* Padding around the content */
+            font-family: Arial, sans-serif; /* Font family for the text */
+        }
+
+        /* Styling the h1 element */
+        h1 {
+            color: blue; /* Blue text color */
+            text-align: center; /* Center align the text */
+            text-transform: uppercase; /* Transform text to uppercase */
+            font-weight: bolder; /* Make the text bold */
+        }
+
+        /* Styling the p element */
+        p {
+            line-height: 1.6; /* Line height for better readability */
+            margin: 10px 0; /* Margin around the paragraph */
+            color: red; /* Red text color */
+        }
+
+        /* Styling the a (anchor) element */
+        a {
+            background-color: blue; /* Blue background */
+            padding: 10px; /* Padding inside the link */
+            color: white; /* White text color */
+            text-decoration: none; /* Remove underline from the link */
+            border-radius: 10px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <!-- Content of the page -->
+    <h1>Welcome to Internal CSS Example</h1>
+    <p>This is a paragraph styled using internal CSS.</p>
+    <p style="color: blue;">This paragraph demonstrates inline CSS overriding internal CSS.</p>
+    <a href="#">Click Me</a>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* External CSS file */
+
+/* Styling the h1 element */
+h1 {
+    color: blue;
+}
+   /* Styling the p element */
+p {
+    line-height: 1.6; /* Line height for better readability */
+    margin: 10px 0; /* Margin around the paragraph */
+    color: red; /* Red text color */
+    }
