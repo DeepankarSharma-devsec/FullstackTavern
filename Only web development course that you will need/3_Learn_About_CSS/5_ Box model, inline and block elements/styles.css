@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.diagram {
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.inline {
+    display: inline;
+    background-color: #d1ecf1;
+    padding: 5px;
+}
+
+.block {
+    display: block;
+    background-color: #f8d7da;
+    padding: 5px;
+    margin-top: 10px;
+}

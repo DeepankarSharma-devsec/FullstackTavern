@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar Project with Pseudo Element</title>
+    <link rel="stylesheet" href="navbar_styles.css">
+</head>
+<body>
+    <h1>Navbar Project with Pseudo Element</h1>
+
+    <section>
+        <h2>Overview</h2>
+        <p>This project demonstrates how to build a responsive navigation bar using HTML, CSS Flexbox, and CSS pseudo-elements like <code>::after</code>.</p>
+    </section>
+
+    <section>
+        <h2>HTML Structure</h2>
+        <pre><code>&lt;div class="nav-container"&gt;
+  &lt;h2&gt;Navigation Bar&lt;/h2&gt;
+  &lt;nav class="nav-one"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;button class="login-button"&gt;Login&lt;/button&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+        <h2>Flexbox Layout</h2>
+        <p>The navigation menu uses <code>display: flex</code> to arrange the <code>li</code> elements horizontally.</p>
+        <div class="diagram">
+            <strong>Flex Layout:</strong>
+            <ul>
+                <li>Parent: display: flex</li>
+                <li>Child: flex items (nav links)</li>
+                <li>Justify-content: space-between or space-around</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Styling the Nav and Buttons</h2>
+        <p>Basic styling includes:</p>
+        <ul>
+            <li>Removing list bullets: <code>list-style-type: none</code></li>
+            <li>Spacing: padding and margins</li>
+            <li>Color and background customization</li>
+            <li>Button style: border-radius, background, hover</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Pseudo-element Usage (<code>::after</code>)</h2>
+        <p>The <code>::after</code> pseudo-element is used for hover underline animations.</p>
+        <pre><code>.nav-one a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #007BFF;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-one a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #007BFF;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}</code></pre>
+        <div class="diagram">
+            <strong>Diagram:</strong>
+            <p>Pseudo-element is placed at the bottom of the <code>&lt;a&gt;</code> and animated using <code>transform: scaleX</code>.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Debugging Notes</h2>
+        <p>If the pseudo-element is not appearing correctly:</p>
+        <ul>
+            <li>Ensure parent element has <code>position: relative</code></li>
+            <li>Pseudo-element must have <code>content</code> defined</li>
+            <li>Ensure pseudo-element has size (width/height)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Final Thoughts</h2>
+        <p>Using <code>::after</code> creatively allows for beautiful animations and interactivity in navigation bars. This project demonstrates both CSS basics and advanced techniques like transitions, transform, and pseudo-elements.</p>
+    </section>
+</body>
+</html>

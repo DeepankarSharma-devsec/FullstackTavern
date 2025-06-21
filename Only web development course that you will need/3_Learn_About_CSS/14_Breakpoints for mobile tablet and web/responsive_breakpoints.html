@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design & Breakpoints Notes</title>
+    <link rel="stylesheet" href="responsive_breakpoints.css">
+</head>
+<body>
+    <header>
+        <h1>📱 Responsive Design & CSS Breakpoints</h1>
+        <p>A foundational guide to mastering media queries and building mobile-first designs.</p>
+    </header>
+
+    <section>
+        <h2>🧠 Why Responsive Design?</h2>
+        <ul>
+            <li>Ensures your website works on mobile, tablet, and large screens.</li>
+            <li>Modern CSS & frameworks like Tailwind automate much of this.</li>
+            <li>Breakpoints control how your layout changes based on screen width.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🎯 Goals of This Lesson</h2>
+        <ul>
+            <li>Create a div that changes color based on screen size.</li>
+            <li>Use CSS media queries to define breakpoints.</li>
+            <li>Understand <code>min-width</code> vs <code>max-width</code>.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>📐 Understanding Breakpoints</h2>
+        <div class="diagram">
+            <p><strong>Min-Width:</strong> Minimum screen width required to apply the style.</p>
+            <p><strong>Max-Width:</strong> Maximum screen width where style remains valid.</p>
+            <p><em>Think of them as job timings:</em></p>
+            <ul>
+                <li><code>min-width: 601px</code> = "I start work after 601px"</li>
+                <li><code>max-width: 600px</code> = "I stop work after 600px"</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>💻 Sample Media Query Code</h2>
+        <pre><code>@media (max-width: 600px) {
+  .responsive {
+    background-color: #3498db;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .responsive {
+    background-color: #e67e22;
+  }
+}
+</code></pre>
+    </section>
+
+    <section>
+        <h2>📊 Tailwind CSS Breakpoints (Reference)</h2>
+        <ul>
+            <li><strong>sm</strong>: 640px</li>
+            <li><strong>md</strong>: 768px</li>
+            <li><strong>lg</strong>: 1024px</li>
+            <li><strong>xl</strong>: 1280px</li>
+            <li><strong>2xl</strong>: 1536px</li>
+        </ul>
+        <p>Tailwind simplifies breakpoints by offering pre-defined utility classes.</p>
+    </section>
+
+    <section class="example-box">
+        <h2>🎨 Visual Example: Responsive Box</h2>
+        <div class="responsive">This box changes color based on screen size.</div>
+    </section>
+
+    <footer>
+        <p>✅ You’ve now mastered responsive basics! Keep experimenting and testing with different screen sizes.</p>
+    </footer>
+</body>
+</html>

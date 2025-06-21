@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Notes: Tables and Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    pre, code {
+      background-color: #eef;
+      padding: 0.5em;
+      border-radius: 4px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.5em;
+      text-align: left;
+    }
+    .diagram {
+      margin: 2em 0;
+      padding: 1em;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    .form-preview {
+      padding: 1em;
+      background: #e0f7fa;
+      border: 1px solid #00acc1;
+    }
+    label {
+      display: block;
+      margin: 0.5em 0 0.2em;
+    }
+    input, select, textarea, button {
+      margin-bottom: 1em;
+      padding: 0.4em;
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📘 HTML Notes: Tables and Forms</h1>
+
+<h2>📊 HTML Tables</h2>
+<p>HTML tables are used to display tabular data in rows and columns.</p>
+
+<div class="diagram">
+  <h3>Table Syntax Example</h3>
+  <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Email&lt;/th&gt;
+    &lt;th&gt;DOB&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;alice@example.com&lt;/td&gt;
+    &lt;td&gt;01/01/2000&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+</div>
+
+<p>You can create more rows using <code>&lt;tr&gt;</code> and define headers using <code>&lt;th&gt;</code>, and data using <code>&lt;td&gt;</code>.</p>
+
+<h2>📝 HTML Forms</h2>
+<p>Forms are used to collect data from users. They consist of various input types like text, email, password, checkbox, radio, dropdowns, etc.</p>
+
+<div class="diagram">
+  <h3>Form Preview</h3>
+  <div class="form-preview">
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+
+      <label for="month">Birth Month:</label>
+      <input type="month" id="month" name="birthmonth">
+
+      <label for="game">Favorite Game:</label>
+      <select id="game" name="game">
+        <option value="cricket">Cricket</option>
+        <option value="football">Football</option>
+      </select>
+
+      <label for="color">Choose Color:</label>
+      <input type="color" id="color" name="color">
+
+      <label for="about">About You:</label>
+      <textarea id="about" rows="4" cols="50" placeholder="Describe yourself..."></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+</div>
+
+<h2>📚 Input Types You Should Know</h2>
+<ul>
+  <li><code>text</code> – Basic single-line input</li>
+  <li><code>email</code> – Validates email format</li>
+  <li><code>password</code> – Hides input characters</li>
+  <li><code>checkbox</code> – Allows multiple selections</li>
+  <li><code>radio</code> – Allows one selection in a group</li>
+  <li><code>date</code>, <code>month</code>, <code>time</code> – Date/time pickers</li>
+  <li><code>file</code> – Uploads files</li>
+  <li><code>color</code> – Color picker</li>
+</ul>
+
+<h2>🔍 How to Explore HTML Elements</h2>
+<p>To discover new elements and attributes:</p>
+<ol>
+  <li>Search MDN documentation for the tag (e.g., <code>MDN input email</code>).</li>
+  <li>Use browser inspect tools to understand structure.</li>
+  <li>Experiment and test HTML in code playgrounds or local files.</li>
+</ol>
+
+<h2>✅ Summary</h2>
+<ul>
+  <li><strong>Tables</strong> are used to display structured data in rows/columns.</li>
+  <li><strong>Forms</strong> collect user input using various input types.</li>
+  <li><strong>Labels</strong> improve accessibility and form clarity.</li>
+  <li>Use <code>name</code>, <code>id</code>, <code>type</code>, and <code>placeholder</code> attributes effectively.</li>
+</ul>
+
+<footer style="margin-top: 4rem;">
+  <em>End of HTML Notes: Tables and Forms</em>
+</footer>
+
+</body>
+</html>

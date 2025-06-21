@@ -1,0 +1,83 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.card-diagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card {
+    width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border: 2px dashed #3498db;
+    border-radius: 10px;
+}
+
+.card-image {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.card-buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-buttons button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.diagram img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}

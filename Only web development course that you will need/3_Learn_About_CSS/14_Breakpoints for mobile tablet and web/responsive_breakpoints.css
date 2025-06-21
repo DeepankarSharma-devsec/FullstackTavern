@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 1.5rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.diagram {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+.responsive {
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+/* Breakpoint 1: max-width 600px */
+@media (max-width: 600px) {
+    .responsive {
+        background-color: #3498db;
+    }
+    body {
+        align-items: flex-start;
+    }
+}
+
+/* Breakpoint 2: min-width 601px to max-width 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .responsive {
+        background-color: #e67e22;
+    }
+}
+
+/* Larger than 1024px - default styling */
+@media (min-width: 1025px) {
+    .responsive {
+        background-color: #9b59b6;
+    }
+}

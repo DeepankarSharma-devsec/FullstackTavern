@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model, Inline and Block Elements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Box Model, Inline and Block Elements</h1>
+
+    <section>
+        <h2>1. Introduction to Box Model</h2>
+        <p>The box model is foundational in CSS and governs how much space an element consumes on a webpage. It includes content, padding, border, and margin.</p>
+        <div class="diagram box-model">
+            <p><strong>Box Model Layers:</strong></p>
+            <ul>
+                <li>Content</li>
+                <li>Padding</li>
+                <li>Border</li>
+                <li>Margin</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Types of Box Models</h2>
+        <p>There are two primary types of box models:</p>
+        <ul>
+            <li><strong>Content-box:</strong> Width and height only include the content. Padding and border are added outside.</li>
+            <li><strong>Border-box:</strong> Width and height include content, padding, and border.</li>
+        </ul>
+        <div class="diagram content-vs-border-box">
+            <p><strong>Illustration of Width Calculation:</strong></p>
+            <p>Content-box: Total width = content + padding + border</p>
+            <p>Border-box: Total width = defined box size (content + padding + border included)</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Inline vs Block Elements</h2>
+        <p><strong>Inline Elements:</strong> Do not start on a new line and only take as much width as necessary.</p>
+        <p><strong>Block Elements:</strong> Always start on a new line and take up the full width available.</p>
+        <div class="diagram inline-block-example">
+            <p><strong>Examples:</strong></p>
+            <div>
+                <span class="inline">This is inline</span>
+                <div class="block">This is block</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Summary</h2>
+        <ul>
+            <li>Box model includes: content, padding, border, margin</li>
+            <li>Content-box adds padding and border outside width/height</li>
+            <li>Border-box includes padding and border inside width/height</li>
+            <li>Inline elements flow within the text line</li>
+            <li>Block elements take full width and break the line</li>
+        </ul>
+    </section>
+</body>
+</html>

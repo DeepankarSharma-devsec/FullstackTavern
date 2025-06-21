@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Masterclass Notes</title>
+    <link rel="stylesheet" href="grid_masterclass.css">
+</head>
+<body>
+    <header>
+        <h1>Grid Masterclass - HTML & CSS Notes</h1>
+        <p>A comprehensive breakdown of CSS Grid concepts from the masterclass.</p>
+    </header>
+
+    <section>
+        <h2>1. Introduction to Grid Masterclass</h2>
+        <p>This masterclass expands on CSS Grid, aiming to help you build any layout you can imagine. The video assumes basic prior knowledge of CSS Grid.</p>
+    </section>
+
+    <section>
+        <h2>2. Basic Grid Setup</h2>
+        <p>Using <code>display: grid</code> to enable grid layout.</p>
+        <div class="grid-diagram three-by-three">
+            <div>1</div><div>2</div><div>3</div>
+            <div>4</div><div>5</div><div>6</div>
+            <div>7</div><div>8</div><div>9</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Grid Template Columns and Rows</h2>
+        <p>Using <code>grid-template-columns</code> and <code>grid-template-rows</code> to define structure.</p>
+        <pre><code>grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 100px);</code></pre>
+    </section>
+
+    <section>
+        <h2>4. Grid with Different Column Sizes</h2>
+        <p>Fractions can be allocated differently: e.g., <code>1fr 2fr 1fr</code></p>
+    </section>
+
+    <section>
+        <h2>5. Grid with Gaps</h2>
+        <p>Add spacing using <code>gap: 20px;</code> or more depending on design.</p>
+    </section>
+
+    <section>
+        <h2>6. Grid Item Placement</h2>
+        <p>Customize an item's position using <code>grid-column</code> and <code>grid-row</code> properties.</p>
+    </section>
+
+    <section>
+        <h2>7. Grid Template Areas</h2>
+        <p>Use names for layout regions for better readability.</p>
+        <pre><code>grid-template-areas:
+  "header header header"
+  "sidebar main main"
+  "footer footer footer";</code></pre>
+        <div class="grid-diagram template-areas">
+            <div class="header">Header</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="main">Main</div>
+            <div class="footer">Footer</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>8. Autofit & Minmax</h2>
+        <p>Let the grid decide the best layout with <code>repeat(auto-fit, minmax(100px, 1fr))</code>.</p>
+    </section>
+
+    <section>
+        <h2>9. Alignment & Justification</h2>
+        <p>Grid supports <code>justify-content</code> and <code>align-items</code> for layout alignment.</p>
+    </section>
+
+    <section>
+        <h2>10. Nested Grid</h2>
+        <p>A grid container can contain another grid container for modular layouts.</p>
+    </section>
+
+    <section>
+        <h2>11. Grid Auto Rows</h2>
+        <p>Use <code>grid-auto-rows: minmax(100px, auto)</code> to define the behavior of implicit rows.</p>
+    </section>
+
+    <section>
+        <h2>Summary</h2>
+        <ul>
+            <li><strong>Most Used:</strong> grid-template, repeat, fraction units, gaps</li>
+            <li><strong>Rarely Used:</strong> grid-auto-rows</li>
+            <li><strong>Must Know:</strong> grid-template-areas, autofit/minmax, nested grids</li>
+        </ul>
+    </section>
+</body>
+</html>

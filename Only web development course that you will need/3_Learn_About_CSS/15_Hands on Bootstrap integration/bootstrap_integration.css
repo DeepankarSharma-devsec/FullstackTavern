@@ -1,0 +1,54 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #f9f9f9;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #2d3436;
+}
+
+header, section {
+  background: white;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.diagram {
+  background: #ecf0f1;
+  border-left: 4px solid #3498db;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+code {
+  background: #e1e1e1;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+footer {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #16a085;
+}

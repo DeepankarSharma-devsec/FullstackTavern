@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Building a Semantic HTML Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; background-color: #f9f9f9; color: #333; }
+    h1, h2, h3 { color: #2c3e50; }
+    code, pre { background: #eef; padding: 0.5rem; display: block; border-radius: 4px; margin-bottom: 1rem; }
+    section.diagram { background: #fff; padding: 1rem; border: 1px solid #ccc; border-radius: 6px; margin: 1.5rem 0; }
+    footer { margin-top: 4rem; font-style: italic; }
+  </style>
+</head>
+<body>
+<h1>📘 Building a Semantic HTML Page</h1>
+
+<p>This lecture walks through building a semantic HTML web page, focusing on structural elements, accessibility, and meaningful content grouping using modern HTML5 tags.</p>
+
+<h2>📚 Why Semantics Matter</h2>
+<ul>
+  <li>Improves accessibility for screen readers</li>
+  <li>Makes code more readable and maintainable</li>
+  <li>Helps search engines understand content better</li>
+</ul>
+
+<h2>🧱 Common Semantic Tags</h2>
+<ul>
+  <li><code>&lt;header&gt;</code> – Represents introductory content or a navigational heading</li>
+  <li><code>&lt;nav&gt;</code> – Defines navigation links</li>
+  <li><code>&lt;main&gt;</code> – Main content of the document</li>
+  <li><code>&lt;article&gt;</code> – Independent, self-contained content</li>
+  <li><code>&lt;section&gt;</code> – A generic section of content</li>
+  <li><code>&lt;footer&gt;</code> – Footer for the content or site</li>
+</ul>
+
+<section class="diagram">
+  <h3>📐 Typical Semantic Structure</h3>
+  <pre><code>&lt;header&gt;
+  &lt;h1&gt;Website Title&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;hgroup&gt;
+      &lt;h1&gt;Learn Web Development&lt;/h1&gt;
+      &lt;h2&gt;with Hitesh&lt;/h2&gt;
+    &lt;/hgroup&gt;
+    &lt;section&gt;
+      &lt;p&gt;This is a section with paragraph text.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;code&gt;console.log("Hitesh rocks!");&lt;/code&gt;
+    &lt;/section&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;address&gt;Add your address here&lt;/address&gt;
+  &copy; 2024
+&lt;/footer&gt;</code></pre>
+</section>
+
+<h2>🛠️ Code Features Demonstrated</h2>
+<ul>
+  <li>Semantic grouping with <code>&lt;hgroup&gt;</code></li>
+  <li>Time-specific tags with <code>&lt;time datetime="2024-08-02"&gt;August 2&lt;/time&gt;</code></li>
+  <li>Embedding code blocks using <code>&lt;code&gt;</code></li>
+  <li>Using special characters like <code>&amp;copy;</code> for ©</li>
+</ul>
+
+<h2>🔧 Tools & Techniques</h2>
+<ul>
+  <li>VS Code Prettier extension for auto-formatting</li>
+  <li>Keyboard shortcuts for moving blocks of code efficiently</li>
+</ul>
+
+<h2>🧠 Final Thoughts</h2>
+<p>Semantic HTML not only makes your code cleaner but also enhances accessibility, improves SEO, and aligns with modern web standards. Mastering these basics empowers you to build structured and meaningful web pages.</p>
+
+<footer>End of Notes – Semantic HTML Best Practices</footer>
+</body>
+</html>

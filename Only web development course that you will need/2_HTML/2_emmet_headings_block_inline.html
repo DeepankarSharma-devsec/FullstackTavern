@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Notes: Emmet, Headings & Block vs Inline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.5rem;
+    }
+    .diagram {
+      margin: 1rem 0;
+      background: white;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+    .block {
+      background-color: #b3e5fc;
+      padding: 1rem;
+      margin: 5px 0;
+    }
+    .inline {
+      background-color: #c8e6c9;
+      padding: 0.3rem;
+      margin: 0 3px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Notes: Emmet, Headings & Block vs Inline</h1>
+
+  <h2>📌 Emmet Abbreviations</h2>
+  <p>Emmet is a shorthand syntax that allows faster writing of HTML/CSS.</p>
+  <ul>
+    <li><code>html:5</code> → Full HTML5 boilerplate</li>
+    <li><code>h1&gt;lorem5</code> → Creates an H1 tag with 5 lorem ipsum words</li>
+    <li><code>ul&gt;li*3</code> → Creates a <code>ul</code> with 3 <code>li</code> items</li>
+    <li><code>img:src</code> → Creates an <code>img</code> tag with src</li>
+  </ul>
+
+  <h2>🧱 Headings and Paragraphs</h2>
+  <p>HTML has six levels of headings:</p>
+  <pre>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Sub Heading&lt;/h2&gt;
+...
+&lt;h6&gt;Smallest Heading&lt;/h6&gt;
+  </pre>
+  <p>Use <code>&lt;p&gt;</code> for paragraphs. Use Emmet: <code>p&gt;lorem100</code>.</p>
+
+  <h2>🖼️ Images</h2>
+  <p>Basic syntax:</p>
+  <code>&lt;img src="images/sample.png" alt="Description" width="300" /&gt;</code>
+
+  <h2>🔗 Anchor Tags</h2>
+  <code>&lt;a href="https://example.com"&gt;Visit Site&lt;/a&gt;</code><br/>
+  Special links:
+  <ul>
+    <li>Email: <code>mailto:someone@example.com</code></li>
+    <li>Phone: <code>tel:+1234567890</code></li>
+  </ul>
+
+  <h2>🧾 Lists</h2>
+  <p>Two common types of lists:</p>
+  <ul>
+    <li>Unordered List (<code>ul</code>)</li>
+    <li>Ordered List (<code>ol</code>)</li>
+  </ul>
+
+  <h2>📦 Block vs Inline Elements</h2>
+
+  <div class="diagram">
+    <h3>Block Elements</h3>
+    <div class="block">Heading (h1 - h6)</div>
+    <div class="block">Paragraph (p)</div>
+    <div class="block">List (ul, ol, li)</div>
+    <div class="block">Div</div>
+  </div>
+
+  <div class="diagram">
+    <h3>Inline Elements</h3>
+    <span class="inline">a</span>
+    <span class="inline">img</span>
+    <span class="inline">strong</span>
+    <span class="inline">em</span>
+    <span class="inline">span</span>
+  </div>
+
+  <h3>🧪 Block vs Inline Behavior</h3>
+  <p>Block elements take full width, start on a new line. Inline elements only take required space.</p>
+  <p>Example:</p>
+  <div class="block">
+    <strong>This is a block:</strong>
+    <p>Hello world!</p>
+  </div>
+  <p>
+    <strong>This is inline:</strong>
+    <span class="inline">word1</span>
+    <span class="inline">word2</span>
+  </p>
+
+  <h2>🧠 Important Definitions</h2>
+  <ul>
+    <li><strong>Element:</strong> Full tag + content (e.g., <code>&lt;p&gt;Text&lt;/p&gt;</code>)</li>
+    <li><strong>Tag:</strong> Only the tag (e.g., <code>&lt;p&gt;</code>)</li>
+    <li><strong>Attributes:</strong> Extra info inside tag (e.g., <code>src=</code>, <code>href=</code>)</li>
+    <li><strong>Tooltips:</strong> Use <code>title="..."</code> to add on hover text</li>
+  </ul>
+
+  <h2>🔍 Developer Tools Tip</h2>
+  <p>Use Chrome DevTools (Inspect Element) to check if an element is block or inline.</p>
+  <ul>
+    <li><code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code> → show full-width block</li>
+    <li><code>&lt;img&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code> → show only content width</li>
+  </ul>
+
+  <h2>✅ Quick Summary</h2>
+  <ul>
+    <li>Use Emmet to speed up HTML writing</li>
+    <li>Understand semantic differences between headings and paragraphs</li>
+    <li>Know which tags are block vs inline</li>
+    <li>Use attributes like <code>src</code>, <code>href</code>, <code>title</code> appropriately</li>
+  </ul>
+
+  <footer style="margin-top: 4rem;">
+    <em>End of Notes</em>
+  </footer>
+</body>
+</html>

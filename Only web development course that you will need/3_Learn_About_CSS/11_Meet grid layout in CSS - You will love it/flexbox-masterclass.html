@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Masterclass Notes</title>
+    <link rel="stylesheet" href="flexbox-notes.css">
+</head>
+<body>
+    <div class="notes-container">
+        <h1>Flexbox Masterclass</h1>
+        <p>This masterclass is a deep dive into the powerful CSS layout module called <strong>Flexbox</strong>. Below are the core concepts, properties, and usage examples explained with annotated diagrams.</p>
+
+        <h2>📌 Key Concepts</h2>
+        <ul>
+            <li><strong>Main Axis:</strong> Default is horizontal (left to right) in web.</li>
+            <li><strong>Cross Axis:</strong> Vertical axis (top to bottom).</li>
+            <li>Properties are either container-level or item-level.</li>
+        </ul>
+
+        <h2>📁 Flex Container Properties</h2>
+        <div class="diagram">
+            <img src="images/flex-container.png" alt="Flex Container Illustration">
+            <p class="caption">Diagram: Main Axis (Horizontal) and Cross Axis (Vertical)</p>
+        </div>
+
+        <h3>1. <code>display: flex</code></h3>
+        <p>Applies Flexbox behavior to the container.</p>
+
+        <h3>2. <code>flex-direction</code></h3>
+        <ul>
+            <li><code>row</code> (default)</li>
+            <li><code>column</code></li>
+            <li><code>row-reverse</code></li>
+            <li><code>column-reverse</code></li>
+        </ul>
+
+        <h3>3. <code>justify-content</code> (Main Axis)</h3>
+        <ul>
+            <li><code>flex-start</code>, <code>center</code>, <code>flex-end</code></li>
+            <li><code>space-between</code>, <code>space-around</code>, <code>space-evenly</code></li>
+        </ul>
+
+        <h3>4. <code>align-items</code> (Cross Axis)</h3>
+        <ul>
+            <li><code>flex-start</code>, <code>center</code>, <code>flex-end</code>, <code>stretch</code></li>
+            <li><code>baseline</code> - aligns text baselines</li>
+        </ul>
+
+        <h3>5. <code>flex-wrap</code></h3>
+        <ul>
+            <li><code>nowrap</code> (default)</li>
+            <li><code>wrap</code> - wraps items to next line if space runs out</li>
+            <li><code>wrap-reverse</code></li>
+        </ul>
+
+        <div class="diagram">
+            <img src="images/flex-wrap.png" alt="Flex Wrap Example">
+            <p class="caption">Diagram: Using <code>flex-wrap</code> to prevent content squishing</p>
+        </div>
+
+        <h3>6. <code>align-content</code></h3>
+        <p>Used when content wraps; controls vertical alignment of rows (cross axis).</p>
+
+        <h2>🎯 Flex Item Properties</h2>
+
+        <h3>7. <code>order</code></h3>
+        <p>Rearranges the visual order of items without changing HTML.</p>
+
+        <h3>8. <code>flex-grow</code></h3>
+        <p>Controls how much of remaining space an item should take.</p>
+
+        <h3>9. <code>align-self</code></h3>
+        <p>Overrides <code>align-items</code> on individual items.</p>
+
+        <h2>🧠 Summary Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Scope</th>
+                    <th>Axis</th>
+                    <th>Common Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>flex-direction</td><td>Container</td><td>Main</td><td>row, column</td></tr>
+                <tr><td>justify-content</td><td>Container</td><td>Main</td><td>center, space-between</td></tr>
+                <tr><td>align-items</td><td>Container</td><td>Cross</td><td>center, flex-end</td></tr>
+                <tr><td>flex-wrap</td><td>Container</td><td>Both</td><td>wrap, wrap-reverse</td></tr>
+                <tr><td>align-content</td><td>Container</td><td>Cross</td><td>space-around</td></tr>
+                <tr><td>order</td><td>Item</td><td>None</td><td>0, 1, 2...</td></tr>
+                <tr><td>flex-grow</td><td>Item</td><td>Main</td><td>0, 1, 2...</td></tr>
+                <tr><td>align-self</td><td>Item</td><td>Cross</td><td>center, stretch</td></tr>
+            </tbody>
+        </table>
+
+        <h2>📘 Practice Tip</h2>
+        <p>Try replacing circles with squares and replicate each layout configuration using your own Flexbox containers.</p>
+
+        <h2>📸 Assignment</h2>
+        <p>Create 6 out of 9 Flexbox layouts with squares, take a screenshot, and share your results!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is HTML - Course Notes</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 0; color: #333; }
+        h1, h2 { color: #004080; }
+        code { background-color: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-left: 3px solid #004080; overflow-x: auto; }
+        .diagram { background-color: #eef; padding: 10px; border: 1px dashed #004080; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>What is HTML - Course Notes</h1>
+
+    <h2>📘 Introduction</h2>
+    <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the standard markup language used to create web pages. HTML structures content on the web and is readable by browsers, screen readers, and many other systems.</p>
+
+    <h2>📜 Origin</h2>
+    <p>HTML was initially created to help scientists share research papers online. It allowed the inclusion of elements such as headings, paragraphs, and tables for clarity and accessibility.</p>
+
+    <h2>🔤 Basic Syntax</h2>
+    <p>HTML uses <strong>tags</strong> to define elements. Most tags come in pairs:</p>
+    <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></pre>
+    <p>Here, <code>&lt;h1&gt;</code> is the opening tag, and <code>&lt;/h1&gt;</code> is the closing tag.</p>
+
+    <h2>📁 HTML Document Structure</h2>
+    <div class="diagram">
+        HTML<br>
+        ├── HEAD<br>
+        │   └── TITLE<br>
+        └── BODY<br>
+            ├── H1<br>
+            └── P
+    </div>
+    <p>The HTML document is divided into two main parts:</p>
+    <ul>
+        <li><strong>Head:</strong> Contains metadata, title, links, etc.</li>
+        <li><strong>Body:</strong> Contains visible page content like headings, paragraphs, images, etc.</li>
+    </ul>
+
+    <h2>⚙️ Example Structure</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h2>🧩 Editor Shortcuts</h2>
+    <ul>
+        <li><code>!</code> → Boilerplate template using Emmet in VS Code</li>
+        <li><code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, etc., auto-completion using Tab</li>
+        <li><strong>Live Server:</strong> Use this extension in VS Code to live-preview your HTML code</li>
+    </ul>
+
+    <h2>🎯 Practical Use Cases</h2>
+    <p>HTML is not limited to just web pages on laptops or phones. It is used in:</p>
+    <ul>
+        <li>Screen readers for accessibility</li>
+        <li>In-flight entertainment systems</li>
+        <li>Embedded browser systems (e.g., kiosks, smart TVs)</li>
+    </ul>
+
+    <h2>✅ Summary</h2>
+    <ul>
+        <li>HTML is foundational to web development</li>
+        <li>It uses tags to mark up content</li>
+        <li>Structure: <code>&lt;head&gt;</code> for meta, <code>&lt;body&gt;</code> for visible content</li>
+        <li>Emmet & Live Server tools in VS Code speed up development</li>
+    </ul>
+
+    <p><em>Next step: Start using more tags and building complex layouts!</em></p>
+</body>
+</html>

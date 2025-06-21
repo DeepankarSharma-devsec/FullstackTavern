@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Masterclass Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>CSS Selectors Masterclass</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>What are CSS Selectors?</h2>
+            <p>CSS selectors are patterns used to select the elements you want to style.</p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241120143259875787/DOM-Tree1.webp" alt="DOM Tree Structure" style="width:100%;max-width:600px;">
+        </section>
+
+        <section>
+            <h2>Types of Selectors</h2>
+            <ul>
+                <li><strong>Universal Selector:</strong> <code>*</code> selects all elements.</li>
+                <li><strong>Type Selector:</strong> Targets elements by tag name (e.g., <code>p</code>, <code>h1</code>).</li>
+                <li><strong>Class Selector:</strong> Uses a dot prefix to target elements (e.g., <code>.highlight</code>).</li>
+                <li><strong>ID Selector:</strong> Uses a hash prefix (e.g., <code>#header</code>).</li>
+                <li><strong>Attribute Selector:</strong> Targets elements with specific attributes (e.g., <code>input[type="text"]</code>).</li>
+                <li><strong>Descendant Selector:</strong> Targets all descendants (e.g., <code>article p</code>).</li>
+                <li><strong>Child Selector:</strong> Targets direct children only (e.g., <code>div > p</code>).</li>
+                <li><strong>Adjacent Sibling Selector:</strong> Targets element immediately after another (e.g., <code>h1 + p</code>).</li>
+                <li><strong>General Sibling Selector:</strong> Targets all siblings after a specific element (e.g., <code>h2 ~ p</code>).</li>
+                <li><strong>Pseudo-Class Selector:</strong> Based on user interaction (e.g., <code>a:hover</code>).</li>
+                <li><strong>Pseudo-Element Selector:</strong> Targets part of an element (e.g., <code>p::first-letter</code>).</li>
+                <li><strong>Grouping Selector:</strong> Apply styles to multiple selectors (e.g., <code>h1, h2</code>).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sample DOM Structure Diagram</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241120143321652913/DOM-Tree-2.webp" alt="Sample DOM Structure" style="width:100%;max-width:600px;">
+        </section>
+
+        <section>
+            <h2>Important Notes</h2>
+            <ul>
+                <li>Always read selectors from right to left.</li>
+                <li>Use classes and IDs for precision and maintainability.</li>
+                <li>Universal selector is often used to reset margin and padding.</li>
+                <li>Tailwind CSS follows atomic CSS principles used by Facebook.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

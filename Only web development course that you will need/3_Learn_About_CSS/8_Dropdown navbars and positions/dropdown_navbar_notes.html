@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Navbars and Positions - Lecture Notes</title>
+    <link rel="stylesheet" href="dropdown_navbar.css">
+</head>
+<body>
+    <header>
+        <h1>Lecture Notes: Dropdown Navbars and Positions</h1>
+    </header>
+    <section>
+        <h2>1. Introduction</h2>
+        <p>This lecture builds upon basic navigation bar designs and focuses on implementing dropdowns using pure CSS, understanding positioning, and styling techniques.</p>
+    </section>
+
+    <section>
+        <h2>2. Structure of Dropdown Navigation</h2>
+        <ul>
+            <li><strong>Navigation Container:</strong> <code>nav</code> with class <code>.nav-three</code></li>
+            <li><strong>Unordered List:</strong> Contains <code>li</code> items including one <code>.dropdown</code></li>
+            <li><strong>Dropdown Content:</strong> A <code>div</code> inside the <code>li.dropdown</code> with class <code>.dropdown-content</code></li>
+        </ul>
+        <img src="https://i.imgur.com/qXJkxtR.png" alt="Dropdown Structure Diagram" width="500"/>
+    </section>
+
+    <section>
+        <h2>3. Display & Hover Logic</h2>
+        <ul>
+            <li><code>.dropdown-content</code> has <code>display: none</code> by default</li>
+            <li>On <code>.dropdown:hover</code>, set <code>.dropdown-content</code> to <code>display: block</code></li>
+        </ul>
+        <img src="https://i.imgur.com/zhy0YoN.png" alt="Display Hover Logic" width="500"/>
+    </section>
+
+    <section>
+        <h2>4. Positioning Elements</h2>
+        <ul>
+            <li>Set <code>.dropdown</code> to <code>position: relative</code></li>
+            <li>Set <code>.dropdown-content</code> to <code>position: absolute</code></li>
+            <li>Use <code>top</code>, <code>left</code> to place dropdown correctly</li>
+        </ul>
+        <img src="https://i.imgur.com/vzlfRMi.png" alt="Relative and Absolute Positioning" width="500"/>
+    </section>
+
+    <section>
+        <h2>5. Styling Tips</h2>
+        <ul>
+            <li>Use <code>min-width</code> for dropdown</li>
+            <li>Add hover effects like <code>font-size</code>, <code>color</code> change</li>
+            <li>Style inner buttons and links for better aesthetics</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Summary</h2>
+        <p>
+            Dropdown menus can be implemented using just CSS with techniques like <code>display: none/block</code> and <code>position: absolute</code>. 
+            Understanding the positioning model (relative/absolute) is key to controlling layout behavior in complex UIs.
+        </p>
+    </section>
+</body>
+</html>
