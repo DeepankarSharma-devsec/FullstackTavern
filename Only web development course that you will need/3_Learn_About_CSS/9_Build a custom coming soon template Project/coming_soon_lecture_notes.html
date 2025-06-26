@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Notes - Build a Custom Coming Soon Template Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.7;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lecture Notes</h1>
+    <h2>Title: Build a Custom Coming Soon Template Project</h2>
+    <p><strong>Date:</strong> June 26, 2025</p>
+
+    <h2>Goals:</h2>
+    <ul>
+        <li>Build a "Coming Soon" landing page using only HTML and CSS.</li>
+        <li>Understand how real-world freelance projects are handled.</li>
+        <li>Focus on simplicity, structure, and reusable design principles.</li>
+    </ul>
+
+    <h2>Project Setup:</h2>
+    <ul>
+        <li>Created a file named <code>coming-soon-landing.html</code>.</li>
+        <li>Created a separate <code>style.css</code> file and linked it in the HTML head.</li>
+        <li>Set up basic HTML boilerplate.</li>
+        <li>Used semantic div structure: container > content.</li>
+    </ul>
+
+    <h2>HTML Structure:</h2>
+    <ul>
+        <li>Container with a nested content block.</li>
+        <li>Content includes:
+            <ul>
+                <li>Company logo (image)</li>
+                <li><code>&lt;h1&gt;Coming Soon&lt;/h1&gt;</code></li>
+                <li><code>&lt;p&gt;We are working hard...Stay tuned!&lt;/p&gt;</code></li>
+                <li>Email collection form with:
+                    <ul>
+                        <li>Email input field (<code>required</code>)</li>
+                        <li>Submit button labeled “Notify Me”</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>CSS Highlights:</h2>
+    <ul>
+        <li>CSS Reset using <code>margin: 0;</code> and <code>padding: 0;</code></li>
+        <li>Font family set to Arial/Helvetica and later updated via Google Fonts.</li>
+        <li>Used linear gradients for background (e.g. 135° with 2 shades of purple).</li>
+        <li>Applied Flexbox to center content both vertically and horizontally.</li>
+        <li>Max-width and padding used to constrain and space content appropriately.</li>
+        <li>Used <code>rgba()</code> for transparent white background on content block.</li>
+        <li>Added <code>border-radius</code> and <code>box-shadow</code> for clean look.</li>
+        <li>Email input:
+            <ul>
+                <li>Styled with padding, border-radius, and soft gray border.</li>
+            </ul>
+        </li>
+        <li>Button:
+            <ul>
+                <li>Purple background, white text, no border, border-radius: 5px.</li>
+                <li>Hover effect: background color change with smooth transition.</li>
+                <li><code>cursor: pointer;</code> for better UX.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Advanced Additions:</h2>
+    <ul>
+        <li>Google Fonts integration (example: Noto Sans).</li>
+        <li>Discussed SVG wave generators for fancy footer design.</li>
+        <li>Explained <code>position: absolute;</code> usage with SVG elements.</li>
+        <li>Recommended exploring <code>box-shadow</code> properties via MDN Docs.</li>
+    </ul>
+
+    <h2>Developer Tips:</h2>
+    <ul>
+        <li>Test styling via <code>body &#123; background: red; &#125;</code> before full implementation.</li>
+        <li>Use meaningful classes (e.g. <code>.logo</code>) for styling images.</li>
+        <li>Prefer dashes in IDs and classes for readability (<code>notify-form</code>).</li>
+        <li>REM vs PX: REM is relative to root font-size, PX is absolute.</li>
+    </ul>
+
+    <h2>Assignments Mentioned:</h2>
+    <ul>
+        <li>Customize the focus color on the email input field.</li>
+        <li>Position SVG wave graphic properly at the bottom.</li>
+    </ul>
+
+    <h2>Conclusion:</h2>
+    <p>This hands-on lesson demonstrated how real-world projects like freelance landing pages are structured, coded, and styled from scratch using clean, semantic HTML and scalable CSS techniques. Simplicity and customization were key takeaways.</p>
+</body>
+</html>

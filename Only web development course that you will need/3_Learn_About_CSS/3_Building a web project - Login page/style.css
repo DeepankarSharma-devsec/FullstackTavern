@@ -53,9 +53,3 @@ button:hover {
     background-color: #0056b3;
 }
 
-.diagram {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-}
